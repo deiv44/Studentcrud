@@ -16,7 +16,7 @@ app.get("/", function (req, res) {
 });
 
 
-mongoose.connect("mongodb+srv://kedeleonesup:eTlY02cGZebg9Gv5@backenddb.sogkd.mongodb.net/NodeApi?retryWrites=true&w=majority&appName=BackendDB")
+mongoose.connect("mongodb+srv://kedeleonesup:eTlY02cGZebg9Gv5@backenddb.sogkd.mongodb.net/?retryWrites=true&w=majority&appName=BackendDB")
 .then(() => {
     console.log("Connected to database");
     app.listen(3000, () => {
